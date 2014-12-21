@@ -1,0 +1,22 @@
+CREATE TABLE karyawan (
+id bigint auto_increment primary key,
+nama varchar(30),
+alamat varchar(45),
+tanggal_lahir date,
+telephone varchar(20)
+)
+engine=innodb;
+
+delimiter//
+create procedure isiData()
+begin
+declare i int default 1;
+while(i<10000) do
+begin
+insert into karyawan (nama, alamat, tanggal_lahir,telephone) values('I Gede Arya Wiratama','Jl Raya Celuk Sukawati Gianyar','1989-09-12','081931030707');
+set i += i + 1;
+end while;
+end //
+delimiter;
+
+call isiData();
