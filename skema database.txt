@@ -13,7 +13,7 @@ begin
 declare i int default 1;
 while(i<10000) do
 begin
-insert into karyawan (nama, alamat, tanggal_lahir,telephone) values('I Gede Arya Wiratama','Jl Raya Celuk Sukawati Gianyar','1989-09-12','081931030707');
+insert into karyawan (nama, alamat, tanggal_lahir,telephone) values('I Gede Arya Wiratama','Jl Raya Celuk Sukawati Gianyar','1945-08-17','0811545112');
 set i += i + 1;
 end while;
 end //
